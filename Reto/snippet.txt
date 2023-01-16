@@ -1,0 +1,12 @@
+<model-viewer bounds="tight" src="Reto_Sketchfab_V004.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="paul_lobe_haus_1k_blur.hdr" poster="poster.webp" shadow-intensity="0.3" skybox-image="paul_lobe_haus_1k_blur.hdr" auto-rotate camera-orbit="-79.37deg 81.47deg auto" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 108deg auto">
+
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

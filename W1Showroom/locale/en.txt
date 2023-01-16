@@ -1,0 +1,135 @@
+#: locale=en
+
+## Tour
+
+### Description
+
+### Title
+tour.name = W1 VR Showroom
+
+## Skin
+
+### Button
+Button_30043669_276B_AB09_4179_55F67960822B.label = BACK
+Button_31BA0EDA_276B_BB0B_41AB_1F034AD7982E.label = BACK
+Button_31CDD0C9_276B_A709_41B9_14974BF99F59.label = BACK
+Button_31D4B25E_276B_AB0B_41C1_C15D6C8E01CE.label = BACK
+Button_31D77103_26A8_A6F9_41C1_0E4FE5BCDFCB.label = LEVEL 03
+Button_31E33382_276B_A9FB_418D_0F1214BC3B0B.label = BACK
+Button_31EC247A_276B_AF0B_41C1_60E132D5ABEF.label = BACK
+Button_31F97588_276B_A9F7_41B8_E240E86E2B1E.label = BACK
+Button_3B19FB96_2769_B91B_41AC_9CED3C3E8813.label = LEVEL 03
+Button_3B46C1FE_2769_E90B_41A0_FAFA9002FB7E.label = LEVEL 01
+Button_3BB85E8F_2769_BB09_41B7_C3524280C6D6.label = LEVEL 00
+Button_3CD36464_2769_6F3F_41B6_0B14A7316CED.label = LEVEL 02
+Button_EC152F1E_FC24_142C_41E5_7B03C7C69B2A.label = LEVEL 02
+Button_ECE7CB67_FC3C_1C1B_41EC_D1F8D51C8F1C.label = LEVEL 01
+Button_ECED97F2_FC24_33F5_41E8_E01AC932E96E.label = LEVEL 00
+
+### Tooltip
+IconButton_138AC8EB_1C81_A718_41B9_C0E861AF42F4_mobile.toolTip = Fullscreen
+
+## Media
+
+### Title
+panorama_658097C3_68F8_83AE_41C7_ADD29B5175F5.label = Level 01
+panorama_699AA856_65C3_1864_41CF_758C917BCE41.label = Level 00 Service & Support
+panorama_699EEAA4_65C3_18DB_41C0_5432F9754B8B.label = Level 00 Application
+panorama_69A49029_65C3_082D_41D5_6936E9CAB9B1.label = Level 00 Automation
+panorama_69A851F6_65C3_0827_41CC_4DE64C294063.label = Level 00 Process Technology
+panorama_69B0193A_65C3_782F_41C3_BF6127CFB7C0.label = Level 00 ControlUnit
+panorama_69C4C860_65C1_F85C_41CB_571EE253518F.label = Level 00 Front Left
+panorama_69DFCA0A_65C1_1BEF_41CA_BDB1395CCE99.label = Level 00 Back Left
+panorama_69E5DEEA_65C1_182C_41D9_55DFB155229D.label = Level 00 Front Right
+panorama_69EA4296_65C1_08E7_41D9_0F4C210EA93C.label = Level 00 Back Right
+panorama_69F519EF_65C1_3824_41CB_BD2AAC1262FA.label = Level 00 Additional Equipment
+panorama_69FE8125_65C1_0824_41CB_41F8801A6BC8.label = Level 00 Machine
+panorama_6E274A60_65C1_185C_41C7_3087B7F3E860.label = Level 02
+panorama_6E27A7F7_65C1_0824_4198_4C1A081BC4C3.label = Level 03
+panorama_6E2C363F_65C1_0824_41D0_2554CC4428E0.label = Level 00 Front
+panorama_6E3B2119_65C1_09EC_41B9_B6729DA59969.label = Level 00 Back
+video_4FD3E9CE_686A_3B8E_41D3_F885D986423D.label = MenuLevel01_05_OnAirDesign_V001
+video_6400BA0F_6859_6CE5_41D8_BE1A318DB811.label = MenuLevel01_02_3DmodellingAnimation_V001
+video_6401ABF0_6859_633B_41CE_4F3055C391B9.label = MenuLevel01_03_InteractiveExperience_V001
+video_6401AD9A_6859_67EF_41D3_91B4C368B768.label = MenuLevel01_04_Change_V001
+video_656347A3_6859_63DD_4186_330A362953C2.label = MenuLevel01_01_InteraktiveKomunikation_V001
+
+## Hotspot
+
+### Tooltip
+FlatHotspotPanoramaOverlayArea_1369CFD2_27FB_591B_419D_EED1334BED3C.toolTip = More information
+FlatHotspotPanoramaOverlayArea_150F252C_27F8_E90F_41AA_6F3037BFCEC8.toolTip = More information
+FlatHotspotPanoramaOverlayArea_1529B1E5_27F9_6939_41AA_4AC003A8BA84.toolTip = More information
+FlatHotspotPanoramaOverlayArea_159DA558_27F9_6917_41C1_148725F487DD.toolTip = More information
+FlatHotspotPanoramaOverlayArea_159DD7B5_27E8_A919_41A2_B68AFFD7248E.toolTip = More information
+FlatHotspotPanoramaOverlayArea_1681EE05_27F9_FAF9_41A8_FF65FFB64BE6.toolTip = More information
+FlatHotspotPanoramaOverlayArea_169FFB7B_27F9_B909_41BD_6488E0CBB8A4.toolTip = More information
+FlatHotspotPanoramaOverlayArea_32E346D8_26B8_EB08_41BB_0CE0C19874EB.toolTip = Additional Equipment
+FlatHotspotPanoramaOverlayArea_346AD3D3_26A9_E919_41BA_560FEBB2BA62.toolTip = Control Unit
+FlatHotspotPanoramaOverlayArea_34A0248B_26B8_EF09_41C1_99E80FB6A5FE.toolTip = Machine
+FlatHotspotPanoramaOverlayArea_351674CE_26A8_EF0B_41C0_6848F8767D69.toolTip = Service & Support
+FlatHotspotPanoramaOverlayArea_3572B4BF_26A9_EF09_41A1_721CB4F379D9.toolTip = Automation
+FlatHotspotPanoramaOverlayArea_3581ACEC_26AB_5F0F_41A6_8D544EA37714.toolTip = Process Technology
+FlatHotspotPanoramaOverlayArea_35BB9AB9_26AB_7B09_41BC_8493B835767A.toolTip = Application
+FlatHotspotPanoramaOverlayArea_371A02E5_26B9_AB38_41C2_3EEF4480E285.toolTip = Additional Equipment
+HotspotPanoramaOverlayArea_282BA033_25A7_F9B1_41A7_029A412ABA31.toolTip = Go to LEVEL 00
+HotspotPanoramaOverlayArea_2852C447_26B9_EF79_41A0_F4A6471C5DFF.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_28583CEA_26A9_5F0B_41A9_102D15F66612.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_28706F68_26BF_7937_41B9_E8DF2ABEFB9D.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_2871F639_26B9_AB09_41A5_9B6E4D6A0C16.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_295BEE3C_2698_DB0F_41BE_8B3C9C6F50E4.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_2981855A_26B8_A90B_41A1_B71625E7314E.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_29846D13_2698_D919_41B4_935C68A3512C.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_2986D99A_269B_D90B_4197_BB0905C50BA7.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_29898889_26BB_6709_41A2_73EFBD723F18.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_29927948_26A8_D977_41A3_D1313AFA7ED6.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_29AB337A_26B7_690B_41B6_7B8FEF1AF4D4.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_29B3B093_26B8_E719_41AA_085577B8C07E.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_29B86ECC_26B8_BB0F_41C3_36952731F539.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_29BA5628_26B8_EB37_41C3_44A160168EC8.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_29BF20BC_26AB_A70F_4182_67C3432EAC48.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_29DC1B88_2698_D9F7_414D_627F675B1968.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_29DF58B1_2697_A719_41BC_81744BCBB6AB.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_29E384CA_2699_EF0B_41B3_9CE827F8DEC7.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_2AC50FEC_25A4_26D7_41B1_E9DDCBC65EB8.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_2B0F6B60_25A4_EFCF_419D_9D3A7F0C9387.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_2B60FE8B_25AC_2952_41AA_8339949759DA.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_2B6B7841_25AC_69D1_41BB_8CF233879BC8.toolTip = Go to LEVEL 03
+HotspotPanoramaOverlayArea_2BBEDD99_25A5_EB71_41A8_D29067570F9B.toolTip = Go to LEVEL 00
+HotspotPanoramaOverlayArea_2BD70686_25AC_5953_41C0_7237589D7AC4.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_2BE8830F_25AC_7F51_41B4_5EB6F3A6495D.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_2BED6565_25AC_3BD6_41C1_F1BD2A6C51C4.toolTip = Go to LEVEL 02
+HotspotPanoramaOverlayArea_2CDEC414_20D2_4993_41AA_47A317589945.toolTip = INTERACTIVE DIGITAL EXPERIENCE
+HotspotPanoramaOverlayArea_35F56AC0_25A4_2ECF_41BD_CD8B34A9B90E.toolTip = Go to LEVEL 01
+HotspotPanoramaOverlayArea_680D1B49_6453_C552_41B8_C8CB0AA87C95.toolTip = 3D MODELLING & ANIMATION
+HotspotPanoramaOverlayArea_6919CC4A_645D_4356_41D2_AF728FE461DE.toolTip = CHANGE
+HotspotPanoramaOverlayArea_693BEBD3_6456_C576_41CE_09C81D7D9216.toolTip = AWARDS
+HotspotPanoramaOverlayArea_6941F3F0_6455_4532_41D7_9148F34BA1F9.toolTip = SCHWERES GERAT. LEICHTER ZUGANG.
+HotspotPanoramaOverlayArea_6956C6CB_645D_4F56_41C4_F789BF4EFEFC.toolTip = ANDERS DENKEN
+HotspotPanoramaOverlayArea_6974E402_6452_C2D6_41D7_B39CC519368F.toolTip = JOIN THE CHANGE
+HotspotPanoramaOverlayArea_698474CB_6453_4356_41C5_816881DD98A2.toolTip = DER EINFACHSTE WEG ZUM BESTEN ERGEBNIS
+HotspotPanoramaOverlayArea_698CE405_645F_C2D2_41D3_8921D76654EC.toolTip = ABOUT WENGER.ONE
+HotspotPanoramaOverlayArea_69B8D959_6453_C572_41C2_BF279EAC7567.toolTip = DIGITALE TRANSFORMATION
+HotspotPanoramaOverlayArea_69E13EFC_6455_BF32_41C8_5232801B4A0E.toolTip = MARKTE & MARKEN
+HotspotPanoramaOverlayArea_6A2778B2_6455_4336_41CE_9AAAECECC7B2.toolTip = TRADITION TRIFFT MODERNE
+HotspotPanoramaOverlayArea_6A51A13F_6453_C52E_41AE_2B2AF2C306B7.toolTip = ON-AIR DESIGN
+HotspotPanoramaOverlayArea_6AB2008C_6455_43D2_41D0_6FEEB3D31E10.toolTip = INTERAKTIVE KOMUNIKATION
+HotspotPanoramaOverlayArea_6AD0A81E_645E_C2EE_41CD_214EDA1E2955.toolTip = WE ARE DIVERSITY
+HotspotPanoramaOverlayArea_6AD10A8D_6457_47D2_41B5_D9E45B0645DC.toolTip = GRASS
+
+## Action
+
+### URL
+PopupWebFrameBehaviour_13615FD3_27FB_5919_419E_2D03C7DA69A7.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_AdditionalEquipment-de.html
+PopupWebFrameBehaviour_13A3B98D_27E8_B909_418E_45704F075EC3.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_Machine-de.html
+PopupWebFrameBehaviour_1507852C_27F8_E90F_41B9_47FCE2014527.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_Application-de.html
+PopupWebFrameBehaviour_152E91E6_27F9_693B_41B6_C00316315CE5.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_ServiceSupport-de.html
+PopupWebFrameBehaviour_159D8558_27F9_6917_41AC_80D844F91981.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_ProcessTechnology-de.html
+PopupWebFrameBehaviour_16949B7B_27F9_B909_41B9_A05E2E5922CB.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_ControlUnit-de.html
+PopupWebFrameBehaviour_16994E06_27F9_FAFB_41A0_EAFA0A5F0C11.url = https://sc.engel.p.ams.cdn.hello-one-cloud.de/duo2460900_Automation-de.html
+PopupWebFrameBehaviour_2EB4A7BD_20D6_768D_4195_68E28BA57015.url = https://airbender.xyz/2689417/
+PopupWebFrameBehaviour_68367B4B_6453_C556_418A_AAD924B1B651.url = https://airbender.xyz/2689416/
+PopupWebFrameBehaviour_697CD403_6452_C2D6_41A4_12E6C07562A2.url = https://airbender.xyz/2689418/
+PopupWebFrameBehaviour_69E21EFC_6455_BF32_41D3_7DDEA7FBBADD.url = https://airbender.xyz/2652005/
+PopupWebFrameBehaviour_6A5F7140_6453_C552_41D4_854BF5E074BB.url = https://airbender.xyz/2689419/
+PopupWebFrameBehaviour_6ABA1092_6455_43F6_4192_BF2F23553360.url = https://airbender.xyz/2689415/
