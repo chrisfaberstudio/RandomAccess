@@ -32,5 +32,5 @@ ar-button:active {
 ar-button > a,
 ar-button > a:hover {
   color: inherit;
-  text-decoration: inherit;
+  text-decoration: underline;
 }
