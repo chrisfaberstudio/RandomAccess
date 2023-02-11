@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
       td:first-child {
-        width: 33%;
+        width: 50%;
         font-family: monospace;
       }
       .demo {
         position: relative;
       }
       .demo > ar-button {
-        position: center;
-        right: 2rem;
+        position: absolute;
+        right: 50%;
         bottom: 2rem;
       }
       .demo > img {
@@ -48,12 +48,5 @@
             <span class="prompt">View in Your Space</span>
             <span class="unsupported">Your device does not support AR</span>
           </ar-button>
-        </div>
-    
-        <script type="module" src="https://unpkg.com/@leoncvlt/ar-button"></script>
-        <script>
-          const arButton = document.querySelector("ar-button");
-          arButton.addEventListener("quick-look-button-tapped", () => {
-            window.location.href = "https://https://www.nasa.gov/";
-          });
-        </script>
+        </body>
+        </html>
