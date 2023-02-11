@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <style>
       td:first-child {
-        width: 50%;
+        width: 100%;
         font-family: monospace;
       }
       .demo {
@@ -16,11 +16,11 @@
       }
       .demo > ar-button {
         position: absolute;
-        right: 50%;
+        right: 2rem;
         bottom: 2rem;
       }
       .demo > img {
-        border-radius: 0.5rem;
+        border-radius: 0.0rem;
       }
 
       ar-button:not([ar="unsupported"]) .unsupported {
@@ -34,7 +34,7 @@
         display: none;
       }
       body {
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
       }
     </style>
         <div class="demo">
@@ -45,8 +45,15 @@
             ios-src="https://github.com/chrisfaberstudio/RandomAccess/raw/main/MyARbutton2/assets/asset.usdz"
             show-if-unsupported
           >
-            <span class="prompt">View in Your Space</span>
+            <span class="prompt">View in your space</span>
             <span class="unsupported">Your device does not support AR</span>
           </ar-button>
-        </body>
-        </html>
+        </div>
+    
+        <script type="module" src="https://unpkg.com/@leoncvlt/ar-button"></script>
+        <script>
+          const arButton = document.querySelector("ar-button");
+          arButton.addEventListener("quick-look-button-tapped", () => {
+            window.location.href = "https://https://www.nasa.gov/";
+          });
+        </script>
