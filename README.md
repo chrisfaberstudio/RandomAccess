@@ -1,1 +1,1 @@
-Random AR and WEb-XR tests and samples.
+Random AR and Web-XR tests and samples.
