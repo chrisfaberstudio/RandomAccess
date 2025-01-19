@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Image Compare Web Component</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.5;
+      max-width: 35em;
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    * {
+      margin: 0;
+    }
+
+    :is(main, .table-of-contents) > * + * {
+      margin-top: 1em;
+    }
+
+    :is(main, .table-of-contents) > :is(h1, h2, h3, h4, h5, h6) {
+      margin-top: 2em;
+    }
+
+    code {
+      background: #333;
+      color: #fff;
+      display: inline-block;
+      padding: 0.1em 0.2em;
+    }
+
+    pre code {
+      display: block;
+      overflow-x: auto;
+      max-width:100%;
+      padding: 1em;
+    }
+  </style>
+
+  <meta name="description" content="A tiny, zero-dependency web component for comparing two images using a slider. Built with a focus on accessibility, performance, and progressive enhancement.">  
+  <meta property="og:image" content="https://image-compare-component.netlify.app/assets/images/image-compare-share.png">
+  <meta property="og:image:alt" content="A slider comparing two illustrations of a colorful cloud character.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.ico"/>
+</head>
+
+<body>
+  <main>
+    <h1 id="image-compare">Image Compare</h1>
+
+    <p>
+      <em>
+        A tiny, zero-dependency web component for comparing two images using a slider. Built with a focus on accessibility, performance, and progressive enhancement.
+      </em>
+    </p>
+
+    <p>
+      For more information you can <a href="https://www.npmjs.com/package/@cloudfour/image-compare">install it on npm</a>,
+      <a href="https://github.com/cloudfour/image-compare">view the source onGitHub</a>, or
+      <a href="https://cloudfour.com/thinks/building-an-accessible-image-comparison-web-component/">read an article about how it was built</a>.
+    </p>
+
+    <figure>
+      <image-compare label-text="Use the slider to control the visibility of the two images.">
+        <img 
+          slot="image-1" 
+          alt='A friendly illustrated cloud character with eyes on a red-pink background.' 
+          src="/assets/images/example-image.svg"
+          width="1600" 
+          height="900"
+        />
+        <img 
+          slot="image-2" 
+          alt='A friendly illustrated cloud character with eyes surrounded by a variety of icons (including check marks, stars, code brackets, buttons, hearts, a checkbox, and many more) on a blue background.' 
+          src="/assets/images/example-image2.svg"  
+          width="1600" 
+          height="900"        
+        />
+      </image-compare>
+    </figure>
+
+    <nav class="table-of-contents" aria-labelledby="table-of-contents">
+      <h2 id="table-of-contents">Table of Contents</h2>
+
+      <ol>
+        <li>
+          <a href="#how-it-works">How it works</a>
+
+          <ol>
+            <li>
+              <a href="#accessibility">Accessibility</a>
+            </li>
+            <li>
+              <a href="#performance">Performance</a>
+            </li>
+            <li>
+              <a href="#progressive-enhancement">Progressive Enhancement</a>
+            </li>
+            <li>
+              <a href="#browser-support">Browser Support</a>
+            </li>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#usage">Usage</a>
+
+          <ol>
+            <li>
+              <a href="#slots">Slots</a>
+            </li>
+            <li>
+              <a href="#custom-label-text">Custom Label Text</a>
+            </li>
+            <li>
+              <a href="#styling">Styling</a>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#manifest-files">Manifest Files</a>
+        </li>
+        <li>
+          <a href="#contributing">Contributing</a>
+        </li>
+      </ol>
+    </nav>
+
+    <h2 id="how-it-works">How it works</h2>
+
+    <p>
+      Image Compare layers your two images on top of each other. 
+      Then it applies a percentage-based 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">CSS clipping mask</a>
+      to the top image.
+    </p>
+
+    <p>
+      The slider control is built using a 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">HTML range input</a>
+      with special styles and positioning applied via CSS.
+      When the slider value changes the clipping mask is updated using a 
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">custom property</a>.
+    </p>
+
+    <h3 id="accessibility">Accessibility</h3>
+
+    <p>
+      Since Image Compare uses a native HTML range input it can be controlled 
+      via keyboard and assistive technologies.
+    </p>
+
+    <p>
+      The input has a 
+      <a href="https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/#showing-additional-content-for-screen-readers">visually hidden label</a> 
+      which is exposed to screen readers and other assistive technologies 
+      without affecting the visual design. 
+      This can be customized with the <code>label-text</code> attribute.
+    </p>
+
+    <p>
+      When using Image Compare careful thought should be given to the label text,
+      as well as the alt text on the images being compared.
+    </p>
+
+    <h3 id="performance">Performance</h3>
+
+    <p>
+      Image Compare has zero dependencies and weighs in at just
+      <a href="https://bundlephobia.com/package/@cloudfour/image-compare">1.5 kB (minified and gzipped)</a>
+      including markup, interactivity, and styles. 
+    </p>
+
+    <h3 id="progressive-enhancement">Progressive Enhancement</h3>
+
+    <p>
+      If the JavaScript is slow to load or fails to load, the two images will
+      display vertically stacked on the page so they can still be compared.
+    </p>
+
+    <h3 id="browser-support">Browser Support</h3>
+
+    <p>
+      Image Compare works in all modern browsers. 
+      (It will not work in IE11 since IE11 does not have support for custom
+      elements or custom properties. In IE11 it should fall back to displaying
+      two stacked images.)
+    </p>
+
+    <h2 id="usage">Usage</h2>
+
+    <p>
+      The quickest way to get started is to load Image Compare as a script tag:
+    </p>
+
+    <pre><code>&lt;script src=&quot;https://unpkg.com/@cloudfour/image-compare/dist/index.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+    <p>
+      Then you can use Image Compare like a regular HTML element:
+    </p>
+
+<pre><code>&lt;image-compare label-text=&quot;Screen Reader Label Text&quot;&gt;
+  &lt;img slot=&quot;image-1&quot; alt=&quot;Alt Text&quot; src=&quot;path/to/image.jpg&quot;/&gt;
+  &lt;img slot=&quot;image-2&quot; alt=&quot;Alt text&quot; src=&quot;path/to/image.jpg&quot;/&gt;
+&lt;/image-compare&gt;</code></pre>
+
+    <p>
+      You can also install Image Compare as <a href="https://www.npmjs.com/package/@cloudfour/image-compare/">an npm package</a>:
+    </p>
+
+    <pre><code>npm i @cloudfour/image-compare</code></pre> 
+
+    <p>
+      And then import it into your code:
+    </p>
+
+    <pre><code>import '@cloudfour/image-compare'</code></pre> 
+
+    <h3 id="slots">Slots</h3>
+
+    <p>
+      It expects two images to be passed into the <code>image-1</code> and <code>image-2</code> slots. 
+      (<code>image-1</code> will be on the left, and <code>image-2</code> will be on the right.)
+    </p>
+
+    <p>
+      For best results both images should have the same aspect ratio.
+      The second image will be cropped to the height of the first image.
+    </p>
+
+    <p>
+      Image Compare also works well with the 
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">
+        responsive images syntax
+      </a>
+      allowing you to optimize your images for different devices and screen sizes.
+    </p>
+
+    <h3 id="custom-label-text">Custom Label Text</h3>
+
+    <p>
+      There is an optional <code>label-text</code> attribute which can be used to provide extra context to screen reader users and other assistive technologies.
+      If left unset it will default to the following:
+    </p>
+
+    <p>
+      <em>
+        Control how much of each overlapping image is shown. 
+        0 means the first image is completely hidden and the second image is fully visible.
+        100 means the first image is fully visible and the second image is completely hidden.
+        50 means both images are half-shown, half-hidden.
+      </em>
+    </p>
+
+    <h3 id="styling">Styling</h3>
+
+    <p>
+      The image-compare component can be styled using custom properties. 
+      Here is the full list of custom properties and their default values:
+    </p>
+
+<pre><code>--thumb-background-color: hsla(0, 0%, 100%, 0.9);
+--thumb-background-image: url('data:image/svg+xml;utf8,&lt;svg viewbox=&quot;0 0 60 60&quot;  width=&quot;60&quot; height=&quot;60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;4&quot; d=&quot;M20 20 L10 30 L20 40&quot;/&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;4&quot; d=&quot;M40 20 L50 30 L40 40&quot;/&gt;&lt;/svg&gt;');
+--thumb-size: clamp(3em, 10vmin, 5em);
+--thumb-radius: 50%;
+--thumb-border-color: hsla(0, 0%, 0%, 0.9);
+--thumb-border-size: 2px;
+
+--focus-width: var(--thumb-border-size);
+--focus-color: hsl(200, 100%, 80%);
+
+--border-width: 2px;
+--border-color: hsla(0, 0%, 0%, 0.9);</code></pre>
+
+    <h2 id="manifest-files">Manifest Files</h2>
+
+    <p>
+      Additional <a href="https://github.com/webcomponents/custom-elements-manifest">manifest</a> 
+      documentation files have been automatically generated for this component using the 
+      <a href="https://github.com/runem/web-component-analyzer">Web Component Analyzer</a>:
+    </p>
+
+    <ul>
+      <li>
+        <a href="/manifests/manifest.json">JSON Manifest</a>
+      </li>
+      <li>
+        <a href="/manifests/manifest.md">Markdown Manifest</a>
+      </li>
+      <li>
+        <a href="/manifests/manifest-vscode.json">VS Code Manifest</a>
+      </li>
+    </ul>
+
+    <h2 id="contributing">Contributing</h2>
+
+    <p>
+      Notice an issue or have an idea for an improvement?
+      Please 
+      <a href="https://github.com/cloudfour/image-compare/issues/new">
+        create an issue on GitHub.
+      </a>
+    </p>
+
+    <hr>
+
+    <p>
+      <em>
+        Built with love and web components by <a href="https://cloudfour.com">Cloud Four</a>.
+      </em>
+    </p>
+  </main>
+
+  <script src="/src/index.js" type="module"></script>
+</body>
+</html>
