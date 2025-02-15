@@ -21,13 +21,14 @@
     
     <script>
       const slider = document.querySelector(".slider input");
-      const img = document.querySelector(".images .img-2");
+      const img1 = document.querySelector(".images .img-1");
       const dragLine = document.querySelector(".slider .drag-line");
       
       slider.oninput = () => {
         let sliderVal = slider.value;
         dragLine.style.left = sliderVal + "%";
-        img.style.width = sliderVal + "%";
+        // Modify clip-path of img-1 based on slider value
+        img1.style.clipPath = `polygon(0 0, ${sliderVal}% 0, ${sliderVal}% 100%, 0% 100%)`;
       };
     </script>
   </body>
