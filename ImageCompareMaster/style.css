@@ -40,7 +40,7 @@ html, body {
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
-  transition: clip-path 0s ease; /* Remove transition delay for immediate update */
+  transition: clip-path 0s ease;
 }
 
 .wrapper .slider {
@@ -64,11 +64,13 @@ html, body {
 
 .slider .drag-line {
   position: absolute;
+  top: 0;
   left: 50%;
   width: 3px;
   height: 100vh;
   background: #fff;
   pointer-events: none;
+  z-index: 1; /* Ensure the line stays behind the circle */
 }
 
 .slider .drag-line span {
@@ -81,4 +83,5 @@ html, body {
   border: 3px solid #fff;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 2; /* Ensure the circle stays above the line */
 }
