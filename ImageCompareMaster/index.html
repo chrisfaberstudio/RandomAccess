@@ -24,13 +24,12 @@
       const img2 = document.querySelector(".images .img-2");
       const dragLine = document.querySelector(".slider .drag-line");
 
-      slider.oninput = () => {
+      slider.addEventListener("input", () => {
         let sliderVal = slider.value;
         dragLine.style.left = sliderVal + "%";
-        
-        // Adjust the clip-path of img-2 to show only part of the image based on the slider value
+        // Directly adjust the clip-path of img-2 based on slider value
         img2.style.clipPath = `polygon(0 0, ${sliderVal}% 0, ${sliderVal}% 100%, 0 100%)`;
-      };
+      });
     </script>
   </body>
 </html>

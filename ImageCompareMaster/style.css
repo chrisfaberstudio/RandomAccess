@@ -40,8 +40,7 @@ html, body {
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Default full width */
-  transition: clip-path 0.2s ease; /* Smooth transition for img-2 clipping */
+  transition: clip-path 0s ease; /* Remove transition delay for immediate update */
 }
 
 .wrapper .slider {
