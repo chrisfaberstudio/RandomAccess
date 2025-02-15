@@ -89,7 +89,6 @@ html, body {
 .slider .drag-line span {
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
@@ -100,9 +99,9 @@ html, body {
 }
 
 .slider .drag-line span.left {
-  transform: translate(-120%, -50%) rotate(90deg); /* Rotate to make the left arrow point left and shift it */
+  transform: translate(-150%, -50%) rotate(180deg); /* Flip the left arrow and shift */
 }
 
 .slider .drag-line span.right {
-  transform: translate(120%, -50%) rotate(-90deg); /* Rotate to make the right arrow point right and shift it */
+  transform: translate(150%, -50%) rotate(180deg); /* Flip the right arrow and shift */
 }
