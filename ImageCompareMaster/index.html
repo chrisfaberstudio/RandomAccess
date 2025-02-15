@@ -27,8 +27,9 @@
       slider.oninput = () => {
         let sliderVal = slider.value;
         dragLine.style.left = sliderVal + "%";
-        // Move img-1 using transform without clipping
-        img1.style.transform = `translateX(-${100 - sliderVal}%)`;
+        
+        // Adjust the clip-path of img-1 without cutting off the left part of the image
+        img1.style.clipPath = `polygon(0 0, ${sliderVal}% 0, ${sliderVal}% 100%, 0% 100%)`;
       };
     </script>
   </body>
