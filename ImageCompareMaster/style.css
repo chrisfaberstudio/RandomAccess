@@ -42,8 +42,8 @@ html, body {
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
-  width: 50vw;
   clip-path: inset(0 50% 0 0);
+  pointer-events: none;
 }
 
 .wrapper .slider {
