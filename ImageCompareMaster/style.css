@@ -23,14 +23,12 @@ html, body {
   left: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
 
 .wrapper .images .img-1,
 .wrapper .images .img-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  flex: 1;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -41,8 +39,8 @@ html, body {
 }
 
 .wrapper .images .img-2 {
-  width: 50vw;
   background-image: url("images/Image02.jpg");
+  clip-path: inset(0 50% 0 0);
 }
 
 .wrapper .slider {
