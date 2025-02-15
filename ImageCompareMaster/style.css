@@ -21,19 +21,28 @@ html, body {
   height: 100%;
   width: 100%;
   display: flex;
+  position: relative;
+}
+
+.wrapper .images .img-1,
+.wrapper .images .img-2 {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .wrapper .images .img-1 {
-  height: 100%;
-  width: 100%;
-  background: url("images/Image01.jpg") no-repeat center center / cover;
+  background-image: url("images/Image01.jpg");
 }
 
 .wrapper .images .img-2 {
-  position: absolute;
-  height: 100%;
   width: 50%;
-  background: url("images/Image02.jpg") no-repeat center center / cover;
+  background-image: url("images/Image02.jpg");
+  overflow: hidden;
 }
 
 .wrapper .slider {
