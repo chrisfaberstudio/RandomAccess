@@ -9,16 +9,13 @@ html,body{
   place-items: center;
   background: #efefef;
 }
-.copyright{
-  font-size: 150%;
-}
 .wrapper{
   position: relative;
   height: 500px;
   width: 750px;
   overflow: hidden;
   background: #fff;
-  border: 7px solid #fff;
+  border: 0px solid #fff;
   box-shadow: 0px 0px 0px rgba(0,0,0,0);
 }
 .wrapper .images{
@@ -30,15 +27,12 @@ html,body{
   height: 100%;
   width: 100%;
   background: url("images/Image01.jpg") no-repeat;
-  /* background: url("images/car.jpg") no-repeat; */
 }
 .wrapper .images .img-2{
   position: absolute;
   height: 100%;
   width: 50%;
-  /* filter: blur(5px); */
   background: url("images/Image01.jpg") no-repeat;
-  /* background: url("images/car.png") no-repeat; */
 }
 .wrapper .slider{
   position: absolute;
