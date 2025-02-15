@@ -18,9 +18,7 @@ html, body {
 }
 
 .wrapper .images {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -42,9 +40,7 @@ html, body {
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
-  width: 100vw;
-  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
-  transition: clip-path 0.1s linear;
+  clip-path: inset(0 50% 0 0);
 }
 
 .wrapper .slider {
