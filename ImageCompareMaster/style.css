@@ -68,7 +68,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 10px; /* Always 10px wide */
+  width: 3px; /* Line now 3px wide */
   height: 100vh;
   background: #fff;
   pointer-events: none;
@@ -81,7 +81,7 @@ html, body {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 10px;
+  width: 3px; /* Adjust line width */
   background-color: #fff;
 }
 
@@ -95,12 +95,12 @@ html, body {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 15px solid #fff; /* Arrow pointing upwards */
+  border-bottom: 15px solid #fff; /* Arrow pointing downwards */
   z-index: 2; /* Ensure the arrow is on top of the line */
 }
 
 .slider .drag-line span.left {
-  transform: translate(-50%, -50%) rotate(180deg); /* Rotate the arrow for left direction */
+  transform: translate(-50%, -50%) rotate(180deg); /* Rotate for left arrow */
 }
 
 .slider .drag-line span.right {
