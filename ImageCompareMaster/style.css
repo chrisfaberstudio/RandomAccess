@@ -75,33 +75,16 @@ html, body {
   z-index: 1;
 }
 
-.slider .drag-line::before {
+.slider .drag-line::after {
   content: '';
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px; /* Adjust line width */
-  background-color: #fff;
-}
-
-/* Style for the arrows */
-.slider .drag-line span {
-  position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;  /* Adjust width of the arrow */
-  border-right: 12px solid transparent; /* Adjust width of the arrow */
-  border-bottom: 18px solid #fff; /* Arrow pointing downwards */
-  z-index: 2; /* Ensure the arrow is on top of the line */
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff; /* White dot */
+  border-radius: 50%;
+  transform: translate(-50%, -50%); /* Center the dot */
 }
 
-.slider .drag-line span.left {
-  transform: translate(-150%, -50%) rotate(180deg); /* Flip the left arrow and shift */
-}
-
-.slider .drag-line span.right {
-  transform: translate(150%, -50%) rotate(180deg); /* Flip the right arrow and shift */
-}
+/* Optional: style for the white dot can be customized */
