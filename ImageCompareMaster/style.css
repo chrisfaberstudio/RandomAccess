@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
+html, body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   background: #efefef;
 }
 .copyright{
@@ -14,10 +15,13 @@ html,body{
 }
 .wrapper{
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  width: 90vw;
   overflow: hidden;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .wrapper .images{
   height: 100%;
@@ -28,15 +32,14 @@ html,body{
   height: 100%;
   width: 100%;
   background: url("images/Image01.jpg") no-repeat;
-  /* background: url("images/car.jpg") no-repeat; */
+  background-size: cover;
 }
 .wrapper .images .img-2{
   position: absolute;
   height: 100%;
   width: 50%;
-  /* filter: blur(5px); */
   background: url("images/Image02.jpg") no-repeat;
-  /* background: url("images/car.png") no-repeat; */
+  background-size: cover;
 }
 .wrapper .slider{
   position: absolute;
