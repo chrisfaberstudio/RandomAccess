@@ -36,12 +36,14 @@ html, body {
 
 .wrapper .images .img-1 {
   background-image: url("images/Image01.jpg");
-  visibility: visible; /* Make img-1 visible on load */
+  /* Ensuring img-1 is visible */
+  clip-path: none;
 }
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
   transition: clip-path 0s ease;
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
 }
 
 .wrapper .slider {
@@ -83,6 +85,18 @@ html, body {
   height: 42px;
   border: 3px solid #fff;
   border-radius: 50%;
-  background: transparent; /* Remove the black background */
+  background: transparent; /* Removed the black background */
   z-index: 2; /* Circle stays above the line */
+  pointer-events: none;
+}
+
+/* Adjusting the height of the line to avoid cutting through the circle */
+.slider .drag-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: #fff;
 }
