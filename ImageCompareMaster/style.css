@@ -11,8 +11,8 @@ html,body{
 }
 .wrapper{
   position: relative;
-  height: 500px;
-  width: 750px;
+  height: fit-content;
+  width: fit-content;
   overflow: hidden;
   background: #fff;
   border: 0px solid #fff;
