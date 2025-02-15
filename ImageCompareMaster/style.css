@@ -40,7 +40,6 @@ html, body {
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
-  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
   will-change: clip-path;
 }
 
