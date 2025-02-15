@@ -40,7 +40,7 @@ html, body {
 
 .wrapper .images .img-2 {
   background-image: url("images/Image02.jpg");
-  will-change: clip-path;
+  transition: width 0.2s ease; /* Smooth transition for resizing img-2 */
 }
 
 .wrapper .slider {

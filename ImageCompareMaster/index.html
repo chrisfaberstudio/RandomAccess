@@ -21,15 +21,14 @@
     
     <script>
       const slider = document.querySelector(".slider input");
-      const img1 = document.querySelector(".images .img-1");
+      const img2 = document.querySelector(".images .img-2");
       const dragLine = document.querySelector(".slider .drag-line");
-      
+
       slider.oninput = () => {
         let sliderVal = slider.value;
         dragLine.style.left = sliderVal + "%";
-        
-        // Adjust the clip-path of img-1 without cutting off the left part of the image
-        img1.style.clipPath = `polygon(0 0, ${sliderVal}% 0, ${sliderVal}% 100%, 0% 100%)`;
+        // Change the width of img-2 based on the slider value
+        img2.style.width = (100 - sliderVal) + "%";
       };
     </script>
   </body>
