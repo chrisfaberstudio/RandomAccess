@@ -72,7 +72,7 @@ html, body {
   height: 100vh;
   background: #fff;
   pointer-events: none;
-  z-index: 1; /* Line stays behind the arrows */
+  z-index: 1;
 }
 
 .slider .drag-line::before {
@@ -93,16 +93,16 @@ html, body {
   transform: translate(-50%, -50%);
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 15px solid #fff; /* Arrow pointing downwards */
+  border-left: 12px solid transparent;  /* Adjust width of the arrow */
+  border-right: 12px solid transparent; /* Adjust width of the arrow */
+  border-bottom: 18px solid #fff; /* Arrow pointing downwards */
   z-index: 2; /* Ensure the arrow is on top of the line */
 }
 
 .slider .drag-line span.left {
-  transform: translate(-60%, -50%) rotate(180deg); /* Shift the left arrow to the left */
+  transform: translate(-120%, -50%) rotate(90deg); /* Rotate to make the left arrow point left and shift it */
 }
 
 .slider .drag-line span.right {
-  transform: translate(60%, -50%); /* Shift the right arrow to the right */
+  transform: translate(120%, -50%) rotate(-90deg); /* Rotate to make the right arrow point right and shift it */
 }
