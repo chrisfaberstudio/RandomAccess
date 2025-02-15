@@ -68,7 +68,7 @@ html, body {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 3px; /* Line now 3px wide */
+  width: 2px; /* Line now 2px wide */
   height: 100vh;
   background: #fff;
   pointer-events: none;
@@ -81,7 +81,7 @@ html, body {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 3px; /* Adjust line width */
+  width: 2px; /* Adjust line width */
   background-color: #fff;
 }
 
@@ -100,9 +100,9 @@ html, body {
 }
 
 .slider .drag-line span.left {
-  transform: translate(-50%, -50%) rotate(180deg); /* Rotate for left arrow */
+  transform: translate(-60%, -50%) rotate(180deg); /* Shift the left arrow to the left */
 }
 
 .slider .drag-line span.right {
-  transform: translate(-50%, -50%); /* Right arrow without rotation */
+  transform: translate(60%, -50%); /* Shift the right arrow to the right */
 }
