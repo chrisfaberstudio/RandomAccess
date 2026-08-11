@@ -1,0 +1,27 @@
+#: locale=en
+
+## Media
+
+### Title
+panorama_FDA32081_F056_D357_41EC_7A38F19DB00C.label = Bathroom
+panorama_FE5BDD38_F057_ADB5_41E1_4C2DB5F2F0EC.label = Bedroom 1
+panorama_FF506E79_F057_6FB7_41C3_D25686EBC74E.label = Bedroom 2
+panorama_FD2D5089_F04E_B357_41EA_C63595A3A4DB.label = Courtyard 1
+panorama_FDC1E31E_F04F_556D_418C_A9A03A4AB77B.label = Courtyard 2
+panorama_FD35A45A_F04E_B3EA_41E3_2151524DC561.label = Courtyard 3
+panorama_FD36B3ED_F04D_B4AF_41D6_B81549F26518.label = Entry
+panorama_FE6B18BC_F055_54AD_41C0_C10A1BDD9541.label = Kitchenette
+
+## Skin
+
+### Tooltip
+IconButton_807BAF04_8E22_670D_41B7_872D69E5EABA.toolTip = Full Screen
+IconButton_80E5955A_8E23_BB05_41CA_43DD61DBAEE9.toolTip = Hotspots Visibility
+IconButton_811D89E1_8E3D_AB07_4191_94003C90B2FF.toolTip = Settings
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Kaiya
